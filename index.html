@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="./src/app.js"></script>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body ng-app="app">
+    <style>
+        h3 {
+            margin-top: 40px;
+        }
+
+        .m-t-20 {
+            margin-top: 20px;
+        }
+    </style>
+    <div ng-controller="MainCtrl">
+        <uib-tabset>
+            <uib-tab ng-repeat="tab in tabs" heading="{{tab.heading}}">
+                <div class="m-t-20" ng-include="tab.url"></div>
+            </uib-tab>
+        </uib-tabset>
+    </div>
+</body>
+</html>

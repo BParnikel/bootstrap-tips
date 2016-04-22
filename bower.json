@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap",
+  "homepage": "https://github.com/BParnikel/StudyProjects",
+  "authors": [
+    "Boris Parnikel"
+  ],
+  "description": "\"Project to study bootstrap\"",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^2.2.1",
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.0",
+    "angular-bootstrap": "^1.2.4"
+  }
+}
